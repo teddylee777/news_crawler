@@ -1,0 +1,5 @@
+fake-useragent
+beautifulsoup4
+newspaper3k
+requests
+feedparser
