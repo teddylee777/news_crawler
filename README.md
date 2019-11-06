@@ -39,7 +39,7 @@
 | body         | html 형식의 본문                  |
 | language     | 설정된 language 옵션 (기본: 'ko') |
 
-
+**Example**
 
 ```python
 from news_crawler import NewsCrawler
@@ -87,6 +87,21 @@ rss feed형식의 .xml을 parsing하여 크롤링 할 전체 url을 가져온 �
 
 dictionary는 상위 `crawl_url` 으로부터 얻은 리턴 값과 동일합니다.
 
+
+
+**Example**
+
+```python
+from news_crawler import NewsCrawler
+
+rss_url = "http://platum.kr/feed"
+
+c = NewsCrawler()
+c.crawl_rss(rss_url)
+```
+
+**Output**
+
 ```
 https://platum.kr/archives/130922
 https://platum.kr/archives/130911
@@ -103,10 +118,6 @@ https://platum.kr/archives/130896
   'published_at': datetime.datetime(2019, 11, 6, 11, 59, 49, tzinfo=tzoffset(None, 32400)),
   'text': '최근 미국, 유럽, 아시아 등 전 세계적으로 스.....
 ```
-
-
-
-
 
 
 
